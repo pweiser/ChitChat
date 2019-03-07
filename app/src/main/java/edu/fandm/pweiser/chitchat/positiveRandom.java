@@ -3,9 +3,9 @@ package edu.fandm.pweiser.chitchat;
 import java.util.Random;
 
 public class positiveRandom {
-    //Taken from Decompiled Source
+    /** This code was taken from decompiled worldy.apk */
 
-    public static final String TAG = "acarcione.PositiveRandom";
+    public static final String TAG = "positiveRandom";
     private static Random r;
 
     public static int nextInt(int bound) {

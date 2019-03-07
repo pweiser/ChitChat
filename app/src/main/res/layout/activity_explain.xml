@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="letsgo" xmlns:app="http://schemas.android.com/apk/res-auto">
         <ImageView android:id="@+id/explain_iv_title"

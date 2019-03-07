@@ -36,7 +36,7 @@ public class LaunchActivity extends AppCompatActivity
     private EditText startET;
     private WordGraph wordGraph;
 
-    /* renamed from: edu.fandm.enovak.wordly.Launch$1 */
+
     class textWatcher implements TextWatcher {
         textWatcher() {
         }
@@ -266,7 +266,7 @@ public class LaunchActivity extends AppCompatActivity
         try
         {
             Log.d(TAG, "buildGraph: Inside try block");
-            inputStream = getResources().openRawResource(R.raw.words_test);
+            inputStream = getResources().openRawResource(R.raw.words_gwicks);
             streamReader = new InputStreamReader(inputStream);
             bufferedReader = new BufferedReader(streamReader);
             String line;

@@ -42,7 +42,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class GameActivity extends AppCompatActivity {
@@ -166,13 +165,6 @@ public class GameActivity extends AppCompatActivity {
                         Log.d(str2, stringBuilder4.toString());
                         GameActivity.this.endSlideShow();
                         reader.close();
-                        /* Was:
-                        try {
-                            reader.close();
-                        } catch (int i2) {
-                            i2.printStackTrace();
-                        }
-                         */
                         return null;
                     }
 
@@ -345,7 +337,7 @@ public class GameActivity extends AppCompatActivity {
         }
         this.shown.set(0, this.soln.get(0));
         this.shown.set(this.soln.size() - 1, this.soln.get(this.soln.size() - 1));
-        this.puzzle = (GridView) findViewById(R.id.game_words_gv);
+        this.puzzle = (GridView) findViewById(R.id.words_gv);
         this.puzzle.setNumColumns(this.shown.size());
         this.puzzle.setAdapter(new ArrayAdapter(this, R.layout.cell, this.shown.toArray(new String[this.shown.size()])));
     }
